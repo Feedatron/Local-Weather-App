@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Local Weather App</title>
+</head>
+<body>
+    <div class="mx-auto" id="outer-box">
+
+        <div class="row" id="insert-html">
+            <div class="mx-auto" id="weather-icon"></div>
+        </div>
+
+        <div class="row" id="main-body">
+            <div class="container col-all-7" id="temp">
+                <p id="temp-val"></p>
+            </div>
+            <div class="container col-all-5">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row" id="sub-body">
+            <div id="weather-description"></div>
+            <span>and</span>
+            <div id="temp-description"></div>
+        </div>
+
+        <div class="row mx-auto" id="footer">
+            <div id="weather-text">
+                <p>Weather in: </p>
+            </div>
+            <div id="city-text">
+                <p id="city-country-val"></p>
+            </div>
+        </div>
+        
+    </div>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules//jquery/dist/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
